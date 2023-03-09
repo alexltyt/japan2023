@@ -1,0 +1,692 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> 2023日本遊 侯選佳麗</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="8ff79cdb-d22d-45bf-9828-159be63cfe89" class="page sans"><header><h1 class="page-title"> 2023日本遊 侯選佳麗</h1></header><div class="page-body"><h1 id="8f709e57-2e68-4ddb-b169-6aaeff75de24" class=""><span style="border-bottom:0.05em solid"><strong>東京</strong></span></h1><hr id="adf0b104-588d-4178-ac7c-3f0506ffde0d"/><h2 id="4c969130-2115-47e3-9075-aadb5e39014f" class=""><mark class="highlight-red">東京景點</mark></h2><p id="fbe2c2b6-627e-4ef4-a967-f9e80aeeb14f" class=""><div class="indented"><p id="c9aa1bf8-1352-44c7-a907-9f5e03cbdf17" class=""><span style="border-bottom:0.05em solid"><strong>三日兩夜自駕遊 草津、輕井澤、蓼科</strong></span></p><p id="fedcde7e-4450-4d35-a5b9-dd48fa71d963" class=""><a href="https://www.facebook.com/watch/?v=580245149498047">https://www.facebook.com/watch/?v=580245149498047</a></p><p id="318715db-756c-47f5-bb1b-c0affa5716d9" class="">
+</p><p id="b96dada9-917a-4ae7-a9de-924d234ce0f2" class=""><strong>SHIBUYA SKY (澀谷 SKY)</strong></p></div></p><figure id="7992ba8e-46ff-488d-bd9d-10940c789751" class="image"><a href="Untitled.png"><img style="width:336px" src="Untitled.png"/></a></figure><h2 id="ecbfd2da-3b4b-41a0-812a-bd54d51b8825" class=""><mark class="highlight-red">東京美食</mark></h2><p id="6d481427-33b2-4105-8ed8-f102bddaeaf0" class=""><div class="indented"><p id="55708454-41fd-4629-976e-216539e4ba16" class=""><span style="border-bottom:0.05em solid"><strong>豐洲市場 (新築地)</strong></span></p></div></p><figure id="ddb59b1a-b6ad-47b6-adb2-623d9f12afc0" class="image"><a href="Untitled%201.png"><img style="width:288px" src="Untitled%201.png"/></a></figure><p id="4e8ff387-bc2c-4b45-83c4-7ac62668f2d5" class=""><div class="indented"><p id="9ec82153-0cd5-4991-954a-3c20ecf5f3a0" class=""><span style="border-bottom:0.05em solid"><strong>宮川本廛鰻魚飯</strong></span></p></div></p><p id="7bd0ecab-9a86-48b9-bd3f-b7d1d98a47c9" class="">
+</p><figure id="d682cd2f-3934-4f11-b046-54026acf67d7" class="image"><a href="Untitled%202.png"><img style="width:275px" src="Untitled%202.png"/></a></figure><p id="5f0a3bce-2ef1-423c-9f7a-e12e6cf70c2c" class=""><div class="indented"><p id="ae1635e4-fc55-4c47-a58e-4cc60d060253" class="">1-chōme-4-6 Tsukiji, Chuo City, Tokyo 104-0045日本</p><p id="58a71787-c295-4b98-a2af-06704e815aa1" class="">〒104-0045 東京都中央区築地１丁目４−6</p><p id="9c3f4725-82e3-454d-929b-f73028b53708" class="">11:30 - 14:00  ; 17:00 - 20:00 (星期六休息)</p></div></p><p id="30d23efc-71c5-4f0a-addc-ab81d3c4d7f4" class=""><div class="indented"><p id="aa304975-8a66-4f42-8882-f4dfea38e040" class=""><span style="border-bottom:0.05em solid"><strong>尾花鰻魚飯</strong></span></p></div></p><figure id="f31ffb09-a42c-4f00-8c88-499d6187b5b7" class="image"><a href="Untitled%203.png"><img style="width:225px" src="Untitled%203.png"/></a></figure><p id="dafed643-dd35-4eeb-b98c-f62d529439d7" class=""><div class="indented"><p id="49343d24-69c0-4ba3-9c9a-d9cbd07cedf6" class="">5 Chome-33-1 Minamisenju, Arakawa City, Tokyo 116-0003日本</p><p id="a73e9430-e54d-4b4c-9194-35c9b5ffb41f" class="">〒116-0003 東京都荒川区南千住５丁目３３−1</p><p id="6b59e5ac-b38f-499d-a957-11840f6925fd" class="">11:30-13:30  ; 16:00-19:30 (星期一、二休息)</p></div></p><p id="ca0ac9fe-6f1c-4a78-90b1-88b6bc3da8b1" class=""><div class="indented"><p id="9eefb7c5-5e34-46cf-af63-243568783474" class=""><span style="border-bottom:0.05em solid"><strong>蛋包飯 Franky &amp; Trinity</strong></span></p></div></p><figure id="5f7d4838-520e-4487-b434-cb3a0287bbc1" class="image"><a href="Untitled%204.png"><img style="width:276px" src="Untitled%204.png"/></a></figure><p id="c10ced52-7704-49af-8cd2-319adc509474" class=""><div class="indented"><p id="681713e3-1d19-418a-8d4c-05d41a6378ca" class="">日本〒164-0011 Tokyo, Nakano City, Central, 1 Chome−33−7 山田ビル B1</p><p id="8a936449-de61-458b-91d3-b1e435e8b0bc" class="">〒164-0011 東京都中野区中央１丁目３３−7 山田ビル B1</p><p id="5a6d31c3-30e3-4f6d-ae21-89329f21e7cc" class=""><a href="https://www.google.com/search?newwindow=1&amp;rlz=1C1RXQR_zh-HKHK997HK997&amp;sxsrf=AJOqlzV3RHsCw9onFPph43RRgGu3-JWrtg:1678331186531&amp;q=franky+%26+trinity+%E9%96%8B%E6%94%BE%E6%99%82%E9%96%93&amp;ludocid=3444107249239317360&amp;sa=X&amp;ved=2ahUKEwje6MDx7s39AhWtBTQIHQAlAIcQ6BN6BAg8EAI">營業時間</a> 12:00 - 13:30 (星期日、一休息)</p></div></p><h1 id="cddbb993-1749-459c-a423-531d038450fc" class="">名古屋</h1><hr id="ff382a8c-8f24-4af6-9792-13ba4240521f"/><h3 id="e899f85a-0ab0-4bbc-aec5-c35b63062334" class=""><mark class="highlight-red">名古屋景點</mark></h3><p id="5363f877-4e0a-4769-bf72-8fc140aa05b7" class=""><div class="indented"><p id="9c602e5a-7225-4bf4-96ba-fbc2ca682ded" class=""><span style="border-bottom:0.05em solid"><strong><strong>名古屋港水族館</strong></strong></span></p></div></p><figure id="2f5997f6-d224-433c-b885-9a753c48393c" class="image"><a href="Untitled%205.png"><img style="width:432px" src="Untitled%205.png"/></a></figure><p id="d96df997-0178-474f-a64c-7db33142fee8" class=""><div class="indented"><p id="50907734-2533-4252-b8fb-b1130064e4da" class="">地址：名古屋市港区港町1-3</p><p id="8051e982-fc8f-4e3c-9aa4-98bb1aa47eb9" class="">電話：+81-52-654-7080</p><p id="a061fd63-f69b-4903-a25b-a5db6d7cab41" class="">開放時間：09:30~17:00</p><p id="4a3f24f2-95ee-460d-8968-cbd7b30c5c52" class="">票價：大人￥2000；小學生￥1000；四歲以上￥500；3歲以下免費</p><p id="ec80fb7b-6e46-4321-800a-dc2227f4b51e" class="">出示名古屋地鐵一日券，大人可以折￥200。</p><p id="630b2c9d-3831-4956-aaa9-27fee415590d" class=""><span style="border-bottom:0.05em solid"><strong>名古屋城</strong></span></p><figure id="57dba686-4371-4ac9-b2b4-e2020c69f60d" class="image"><a href="Untitled%206.png"><img style="width:384px" src="Untitled%206.png"/></a></figure><p id="2e4778c9-3753-449f-9b33-2f9f8299bca3" class=""><span style="border-bottom:0.05em solid"><strong><strong>名古屋景點：長島三井Outlet</strong></strong></span></p><figure id="7d6c1468-592d-49bc-9c9e-103cc9d8f975" class="image"><a href="Untitled%207.png"><img style="width:336px" src="Untitled%207.png"/></a></figure><p id="8186fd2f-7b8b-4473-b79d-94ec77608047" class="">日本的Outlet超好逛，動輒都是幾百家國際知名品牌大集合，店面多元而且氣氛輕快，更重要的是真的可以感覺到折扣價差買起來更開心。</p><p id="b8c4bad2-83a1-4703-ac5d-7ba161757cb8" class="">如果妳也很愛買，那來名古屋就不能錯過位於桑名的長島三井Outlet，裡頭超過270間的商店，而且整個「三井OUTLET PARK爵士之夢長島」就是一個度假園區的概念，除了Outlet之外，還有溫泉飯店、主題樂園等，很適合安排1~2天的行程在這裡玩耍血拼，更重要的是距離名古屋市區車程約40~50分鐘，不管是往返市區，還是從中部國際機場進出，交通都便利。</p><blockquote id="2bf1bb30-7d5a-4f1b-b086-c32b509ff75a" class="">三井OUTLET PARK 爵士之夢長島地址：三重縣桑名市長島町浦安368營業時間：10:00~20:00官網：http://www.31op.com/nagashima/tw/</blockquote><p id="462b9552-f47d-4d76-9b8b-bbda87b0a8f1" class="">
+</p><p id="96ed1a72-384f-461e-8f11-9098f9e14378" class=""><span style="border-bottom:0.05em solid"><strong>OASIS 21（綠洲21）</strong></span><div class="indented"><figure id="e4ed5ed0-9dbe-456d-86cd-b6972d40cabc" class="image"><a href="Untitled%208.png"><img style="width:240px" src="Untitled%208.png"/></a></figure></div></p><p id="ab16a28e-9433-466b-bdb5-ddaffbdca874" class=""><strong><strong>大須商店街</strong></strong><div class="indented"><figure id="2b09388a-d19a-43ea-81df-f4007de5f3b2" class="image"><a href="Untitled%209.png"><img style="width:240px" src="Untitled%209.png"/></a></figure></div></p><p id="c701a6c5-3763-4347-9c82-dd240790496f" class=""><span style="border-bottom:0.05em solid"><strong>龍泉寺溫泉</strong></span></p></div></p><figure id="f46625db-adc9-45be-baa5-c45ba9700356" class="image"><a href="Untitled%2010.png"><img style="width:240px" src="Untitled%2010.png"/></a></figure><p id="9d062564-2eb1-45af-8bb5-a2ec0070aa28" class=""><div class="indented"><p id="eb840032-cae9-4325-83f2-62d17241444d" class=""><strong><span style="border-bottom:0.05em solid">榮町商圈</span></strong></p></div></p><figure id="d10e38a4-5f93-4a9d-a539-ecb65f1244eb" class="image"><a href="Untitled%2011.png"><img style="width:384px" src="Untitled%2011.png"/></a></figure><p id="84b10db2-4bd2-479f-a7f9-4940cc67d980" class=""><div class="indented"><p id="92aba9d8-863d-4176-a2cf-84a0073339bc" class=""><span style="border-bottom:0.05em solid"><strong>白鳥庭園</strong></span></p></div></p><figure id="76b654b6-bdb9-4717-99f0-b23a3766cfc4" class="image"><a href="Untitled%2012.png"><img style="width:432px" src="Untitled%2012.png"/></a></figure><p id="2a544c10-8764-456a-a2a7-e7d13877ce19" class=""><div class="indented"><p id="aa9fb3d5-293d-4781-86fa-e4bd208b5a34" class=""><span style="border-bottom:0.05em solid"><strong>德川園（德川美術館）</strong></span></p></div></p><figure id="08296d22-2c20-40c9-908e-1b90e7ce3455" class="image"><a href="Untitled%2013.png"><img style="width:384px" src="Untitled%2013.png"/></a></figure><h2 id="fe18f769-2e7c-43d0-9837-03f1b9894567" class=""><span style="border-bottom:0.05em solid"><strong>飛驒高山</strong></span></h2><figure id="1dbbac18-a76b-4ce0-a2ee-5a26196b51ac" class="image"><a href="Untitled%2014.png"><img style="width:336px" src="Untitled%2014.png"/></a></figure><p id="50753913-9bbf-45e8-99d9-9f46e784256c" class=""><div class="indented"><h3 id="52428442-7b61-475d-96bc-43cc73fc97b3" class="">溫泉酒店</h3><h3 id="2f8a7039-6df4-4298-9af0-35cf240d9d55" class=""><strong>高山星巴克</strong></h3><p id="95ee94a1-0c56-4f9f-92e6-a4d6903a4d3b" class="">高山地區的星巴克竟然有推出區域限定杯，還是結合當地傳統工藝而製作出的漆器木杯，星巴巴迷不能錯過!!  店內裝潢也蠻舒服的，可以順便來喝一杯季節限定的星冰樂，還有一直推出新口味的濃郁系布丁~~</p></div></p><ul id="1aaec2c0-6c05-4e33-9c53-257fe4660f75" class="bulleted-list"><li style="list-style-type:disc">高山星巴克 (地址) 岐阜県高山市岡本町2-47，(營業時間) 08:00~21:00<h3 id="9e22d5e5-a93e-4446-b8b4-8f13030589b3" class=""><strong>宮川朝市</strong></h3><p id="5412ae43-8575-4e61-88cc-bc3faf794f66" class="">喝飛驒牛乳、吃當季新鮮水果、道地傳統美食，就來宮川朝市，是日本四大朝市喔~前一次沒時間來宮川朝市，這次特別安排住<a href="https://gojp.tw/takayama-koto-no-yume/"><strong>御宿古都之夢旅館</strong></a>一晚，而且沒有訂早餐，就來宮川朝市覓食，逛完再走到對面，就是高山古街喔~</p><ul id="7a64d77b-b804-4863-8c85-899713bfe4d7" class="bulleted-list"><li style="list-style-type:circle">完整分享：<a href="https://gojp.tw/takayama-market/"><strong>宮川朝市，走進日本四大朝市吃在地美食</strong></a></li></ul><ul id="037f46c5-a80c-487d-9a2e-b684c2836d4b" class="bulleted-list"><li style="list-style-type:circle">營業時間：(4~10月)07:00–12:00，(11月~3月)08:00–12:00，無定休</li></ul><ul id="d78966bc-eb96-418d-97fb-ec56ea09aa6b" class="bulleted-list"><li style="list-style-type:circle">導航可以定位：岐阜県高山市片原町36，對面就是朝市入口 (高山站步行5~10分鐘)</li></ul><h3 id="76bd90ba-05ef-454b-ab6b-57aa0fb7d9d1" class=""><strong>高山古街</strong></h3><p id="c4ed1a49-d057-4655-9bb9-a19dd1ed57c8" class="">來高山不能沒來逛高山古街啊!! 保留傳統建築的老街，一間又一間的小店超好買，還有飛驒牛串燒、飛驒牛握壽司，不只是必嚐，晚來還吃不到呢!!</p></li></ul><h2 id="fa74f205-b510-4f6b-b5e3-b8807db42969" class=""><mark class="highlight-red">名古屋美食</mark></h2><p id="695d7709-26b4-40bf-a4fa-bf11280a7813" class="">
+</p><p id="dcbc4564-2c1e-4b4b-9f9a-16085051ac42" class=""><span style="border-bottom:0.05em solid"><strong>名古屋車站週邊KONPARU コンパル老舗</strong></span><div class="indented"><p id="c33ff825-92d4-42a2-b788-401648db94f8" class="">不管哪一餐，早餐、甚至到宵夜，名古屋人一整天都愛吃吐司!! 名古屋車站週邊就好幾家分店，招牌是炸蝦三明治，不是炸豬排三明治喔~ 豪邁把炸蝦夾入厚片吐司，炸蝦好彈牙，每一口都份量十足! 另外，別忘了自己做一杯名古屋式冰咖啡唷~~</p><figure id="e9f6d786-558f-4335-abf3-50ec17675e2f" class="image"><a href="Untitled%2015.png"><img style="width:288px" src="Untitled%2015.png"/></a></figure><p id="0edfb9fa-fd90-418d-a30b-f11191540c3a" class="">
+</p></div></p><p id="98da1d94-c085-48ad-9553-b6978b8a869b" class=""><span style="border-bottom:0.05em solid"><strong><strong>名古屋鰻魚飯 まるや本店(maruya)</strong></strong></span><div class="indented"><p id="bd9a254d-3eb1-40ae-a627-a1601e4360ba" class="">是名古屋排隊的鰻魚飯專賣店，也是美食網站高評分餐廳，獨特的饅魚三吃：第一吃當然是先品嚐微焦香的原味鰻魚飯，第二吃可依喜好加入紫蘇、蔥末、芥末等，第三吃是茶泡飯，在名古屋市區、<a href="https://gojp.tw/centrair/">名古屋中部國際機場</a>都吃得到!!</p><figure id="f03ab328-c481-4aa8-9702-c84302c7a235" class="image"><a href="Untitled%2016.png"><img style="width:336px" src="Untitled%2016.png"/></a></figure></div></p><p id="15a5f35a-984c-42e9-ae38-6dea802eb3ea" class="">
+</p><h1 id="c5d9c025-4af9-47c0-a6af-647d50ae46e2" class="">大阪</h1><hr id="c9d58fdb-5dea-4322-bf67-1778dc2bc5a5"/><h2 id="e9b3f19b-f11b-45de-89c9-bd5738cabd6b" class=""><mark class="highlight-red">美食</mark></h2><p id="7c9468f1-b125-4ad1-8337-3fcefbc9fec2" class=""><div class="indented"><p id="6466f7dc-1fc5-45ac-91ae-7eb437bcd73d" class=""><span style="border-bottom:0.05em solid"><strong><strong>福太郎大阪燒</strong></strong></span></p><figure id="126178da-a04c-404a-a05f-0eb2b6a2e10d" class="image"><a href="Untitled%2017.png"><img style="width:336px" src="Untitled%2017.png"/></a></figure><p id="a9109aa1-3b7c-4820-b61a-3bf959cb4ce3" class="">2 Chome-3-17 Sennichimae, Chuo Ward, Osaka, 542-0074日本</p><p id="a06680d8-0e18-4798-974d-f7c0f13098fb" class="">〒542-0074 大阪府大阪市中央区千日前２丁目３−17</p><p id="58496567-fd12-4136-bc03-e7a150675817" class="">星期一至日17:00-23:00</p><p id="43e43f5b-0b42-4e75-b8b4-cdb95e438585" class="">
+</p><p id="ded535d2-47fb-4338-930e-18dea6e7a8e6" class=""><span style="border-bottom:0.05em solid"><strong>宇治園 心齋橋本店</strong></span></p><figure id="5c86bc1e-f55b-4d67-96c6-7a9e0460c77f" class="image"><a href="Untitled%2018.png"><img style="width:192px" src="Untitled%2018.png"/></a></figure><p id="92c20d9d-3401-4325-86e0-6d6695b0a60e" class="">
+</p><p id="fb433263-782f-4c5b-8510-fdae23b73ad5" class=""><span style="border-bottom:0.05em solid"><strong><strong>達摩元祖串炸</strong></strong></span></p><figure id="f3f39be2-ede3-4c4f-a568-c37c6040069c" class="image"><a href="Untitled%2019.png"><img style="width:288px" src="Untitled%2019.png"/></a></figure><p id="a0dc3ff5-0ab5-46fa-ba5d-afb17b8fc089" class="">
+</p><p id="e3b2ca78-00f1-4e1f-a5e4-59d3222e0aca" class=""><span style="border-bottom:0.05em solid"><strong><strong>大阪王將</strong></strong></span></p><figure id="fcbe3cc3-26e4-4eb4-8bf2-3bb9d9122989" class="image"><a href="Untitled%2020.png"><img style="width:432px" src="Untitled%2020.png"/></a></figure><p id="07c6966a-2e7f-4a54-8fc4-af089dba6381" class="">
+</p><p id="97b45da1-507c-4952-a1ea-80d381a39f46" class=""><span style="border-bottom:0.05em solid"><strong>黑門巿場</strong></span><div class="indented"><p id="cf9d0053-cb91-42cc-b190-f388f8913d71" class=""><strong>まぐろや黒銀</strong></p><ul id="fff0dcd4-716b-4b6f-b18e-a1906912775c" class="bulleted-list"><li style="list-style-type:disc">地址：大阪市中央區日本橋2-11-1 黑門市場內 ()<p id="a25427ff-4722-41b1-b800-33f6de0c3288" class=""><a href="https://www.google.com/maps/place/%E9%BB%91%E9%8A%80/@34.664548,135.5069352,15z/data=!4m2!3m1!1s0x0:0x8cb92673a969b2a9?ved=2ahUKEwi0s8Xl-_3fAhWHiLwKHY_qCsoQ_BIwDnoECAYQCA"><span style="border-bottom:0.05em solid">地圖</span></a></p></li></ul><ul id="33ebfdb2-b409-4211-8b15-b7ce92a1e2aa" class="bulleted-list"><li style="list-style-type:disc">營業時間：08:00-21:00 (周一至周日)</li></ul><figure id="5c548a9a-5ceb-4b62-9967-6cf6cffe4291" class="image"><a href="Untitled%2021.png"><img style="width:288px" src="Untitled%2021.png"/></a></figure></div></p></div></p><h1 id="8c0dd920-634b-40ff-ab73-f1adac3a75c1" class="">京都</h1><hr id="88d1e070-8725-4261-a680-7a48e4b5ac86"/><h2 id="c69679c6-9e59-4c03-9c89-e658f0ca9e98" class=""><mark class="highlight-red">景點</mark></h2><p id="9be64ff2-7bbe-4090-8858-a45a82e96646" class=""><div class="indented"><p id="011d3dd2-f3cc-4f1d-91a2-c308b11a5e62" class=""><span style="border-bottom:0.05em solid"><strong><strong>清水寺</strong></strong></span></p><figure id="eed359de-e31e-481d-9e8c-29b09ccac043" class="image"><a href="Untitled%2022.png"><img style="width:384px" src="Untitled%2022.png"/></a></figure><p id="dfa70386-1bc8-42e3-bdec-bffbca0a36ea" class="">如果是新手第一次去京都自由行，那麼最代表性的景點莫過於清水寺了，清水寺於1944年被列入世界文化遺產，必拍的清水舞台無論是櫻花季或者是楓葉季都超級美，而裡面保佑戀愛順利的地主神社也是人氣景點之一，而除了參拜之外，附近的寧寧之道、二年坂、三年坂等都相當有特色，一路上也有逛不完的和風雜貨、伴手禮店可以採買，非常推薦可以在這附近租借和服，拍照起來會更有特色喔！</p><ul id="64a5d3b4-685b-4e7b-a6c3-c32a964f131e" class="bulleted-list"><li style="list-style-type:disc">地址：京都府京都市東山區清水1-294</li></ul><ul id="db93ed00-0669-4a65-af86-da783b585775" class="bulleted-list"><li style="list-style-type:disc">交通方式：阪急京都線河原町駅或京阪本線祇園四条駅，搭乘市公車至「清水道」下車徒歩約10分</li></ul><p id="83c8d7d3-278b-4a34-9ecf-f77bf2c51aa7" class="">
+</p><p id="e7e2ac09-fa99-422a-988f-bf29b6db3d3a" class=""><span style="border-bottom:0.05em solid"><strong><strong>平安神宮</strong></strong></span></p><figure id="110c6367-ee28-4711-8fb0-ec4ffe4a94cf" class="image"><a href="Untitled%2023.png"><img style="width:384px" src="Untitled%2023.png"/></a></figure><p id="eb0b5b81-9f36-407b-aa3c-1916fe055ef6" class="">平安神宮是京都代表性景點之一，平安神宮正殿區塊，在平安時代時是舉行即位及朝禮等儀式典禮的地方，現今也是日本人舉辦傳統婚禮的熱門地點，而日式庭園也打造非常精緻。同時如果想要在京都欣賞不一樣的枝垂櫻美景，來「平安神宮」一趟絕對不會讓你失望。神宮內種植超過300顆枝垂櫻，姿態優雅多變。每年還會舉辦「平安神宮紅枝垂音樂會」，讓我們沉醉在漫天櫻花與樂聲之中。而平安神宮最著名的櫻花景點除「左近之櫻」外，於夜間點燈時，水池映照著朱色宮殿相襯著滿開的櫻花，絕美程度讓人驚奇。</p><ul id="ce60cb1e-44d5-48ad-9352-f230af7908fb" class="bulleted-list"><li style="list-style-type:disc">地址：京都府京都市左京区岡崎西天王町</li></ul><ul id="3ea06c86-de66-41d0-adc4-47ce6b37010e" class="bulleted-list"><li style="list-style-type:disc">交通方式：搭乘京都市巴士至「岡崎公園 美術館･平安神宮前」下車，徒步約5分</li></ul><ul id="927ddca7-7089-48b2-80f7-2aa9cd5f5616" class="bulleted-list"><li style="list-style-type:disc">費用：大人 600日圓｜小孩 300日圓</li></ul><p id="e6504f91-4c1c-486a-ac17-7ac46b3f7d36" class="">
+</p></div></p><h2 id="7117d579-eb7a-4fd2-9a1d-d058a29e8750" class=""><mark class="highlight-red">美食</mark></h2><p id="ba0bb573-c880-49c3-88fb-28c256a63cc4" class=""><div class="indented"><p id="4df6cd09-6d46-4d56-9d41-dc5c52430337" class=""><span style="border-bottom:0.05em solid"><strong><strong>奧丹清水湯豆腐 </strong></strong></span><strong>総本家 ゆどうふ 奥丹清水</strong></p><figure id="c03838ce-3d04-432e-b8d7-edc85dcf5369" class="image"><a href="Untitled%2024.png"><img style="width:288px" src="Untitled%2024.png"/></a></figure><p id="ebe3fa4c-b733-44ed-a5b2-4870b870df44" class="">湯豆腐，京都代表性美食之一，因在地獨有水質，造就了圓潤柔軟名冠天下的豆腐。波比選擇名店奧丹清水湯豆腐，分軟硬兩款，但老實說我沒吃出和比台灣豆腐厲害的地方...店內日式氛圍反倒更吸引人，下次改去<strong>南禪寺順正湯豆腐</strong>，希望會有不同的感受。</p><ul id="e216f9a0-bf72-4c2d-a0ee-4d5511ea6c04" class="bulleted-list"><li style="list-style-type:disc">地址：京都市東山區清水3-340，<a href="https://www.google.com/maps/place/%E8%B1%86%E8%85%90%E6%96%99%E7%90%86%E8%80%81%E5%BA%97+%E5%A5%A7%E4%B8%B9+%E6%B8%85%E6%B0%B4/@34.9979753,135.7785899,17z/data=!3m1!4b1!4m5!3m4!1s0x600108d021e5b853:0xd28ad87f4b59b9ea!8m2!3d34.9979753!4d135.7807786"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="ba4d2ca0-6cc0-4ba6-8800-c9564152956d" class="bulleted-list"><li style="list-style-type:disc">營業時間：11:00–16:30 (周六日延長至17:00，周四公休)</li></ul><p id="7e42651b-1a60-4b4c-a293-e259e4a12574" class="">
+</p><p id="ae7cc8d3-3b9b-4aea-a29d-cb1609384b6c" class=""><span style="border-bottom:0.05em solid"><strong>廣川鰻魚飯 </strong></span><strong>うなぎ屋 廣川</strong></p><figure id="d55dbf6c-6af9-4a79-a015-7b0ab9f76bc8" class="image"><a href="Untitled%2025.png"><img style="width:288px" src="Untitled%2025.png"/></a></figure><p id="0ebfd106-978f-4eac-ba2d-300946a841e5" class=""><strong>廣川鰻魚飯</strong>，京都最著名的餐廳之一，擁有米其林一星榮耀。使用較高價的日本國產鰻魚，肥厚鰻魚鮮嫩至極，配上秘製燒醬超級好吃！雖然僅收預約客，但好處是能線上<a href="https://unagi-hirokawa.jp/cn/reservation.html">預約</a>且提供中文介面，來嵐山別錯過囉。</p><ul id="f8b67dae-f923-411e-8984-a27b76796da0" class="bulleted-list"><li style="list-style-type:disc">地址：京都市右京區嵯峨天龍寺北造路町44-1，<a href="https://www.google.com/maps/place/%E5%BB%A3%E5%B7%9D+%E9%B0%BB%E9%AD%9A%E9%A3%AF/@35.0169045,135.674584,17z/data=!3m1!4b1!4m5!3m4!1s0x6001a9ff6bf393a5:0x4bf001256f08461c!8m2!3d35.0168919!4d135.6771609"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="6bf93e1a-5eeb-46d4-87d2-7627bb78a95e" class="bulleted-list"><li style="list-style-type:disc">營業時間：11:00–14:30、17:00–20:00 (周一公休)；<mark class="highlight-orange"><strong>須注意僅收預約客</strong></mark></li></ul><ul id="ddd54403-9ff4-43ec-ad4a-05ae84ad408b" class="bulleted-list"><li style="list-style-type:disc">官網：<a href="https://unagi-hirokawa.jp/"><span style="border-bottom:0.05em solid">https://unagi-hirokawa.jp/</span></a></li></ul><p id="a3fa2b1a-1e83-4298-8c5a-3f5c9afd8143" class="">
+</p><p id="0213f386-8dcb-4541-a2ed-7c95255ffbe4" class=""><span style="border-bottom:0.05em solid"><strong>衹園 祇をんう桶やう鰻魚飯</strong></span></p><figure id="350409d8-a17f-4030-a639-328025f0c669" class="image"><a href="Untitled%2026.png"><img style="width:200px" src="Untitled%2026.png"/></a></figure><p id="62647bcf-fe68-4357-94a2-395f9e3dfe8c" class="">京都<strong>祇をんう鰻魚飯</strong>非常有名，米其林一星殊榮誰都想嚐嚐。最自豪餐點「桶裝鰻魚飯」評價好到爆，也有一人份鮮肥細嫩醬烤鰻魚。但官網說僅能電話預約且得用日文溝通，我想找信用卡免費白金秘書處理會快些...✅圖文：<a href="https://bobby.tw/blog/post/222355651">祇をんう桶やう鰻魚飯－米其林一星！花見小路美食預約店</a></p><ul id="a67d594d-ef2d-4867-a4ce-6adc682b21cd" class="bulleted-list"><li style="list-style-type:disc">地址：京都市東山區祇園町南側 570-120</li></ul><ul id="bdd47ac4-551e-498c-926a-525437fb63d0" class="bulleted-list"><li style="list-style-type:disc">營業時間：11:30–14:00、17:00–19:30 (周一公休)；須注意僅收預約客</li></ul><p id="6879c2e0-3e08-42ed-8748-5eacc8de95b3" class="">
+</p><p id="4ead7ddf-9283-4d80-ba50-bf1858010b23" class=""><strong><span style="border-bottom:0.05em solid">武藏迴轉壽司（寿しのむさし）</span></strong></p><figure id="81a3e4b8-b684-444d-9ce7-19f0b6d653a6" class="image"><a href="Untitled%2027.png"><img style="width:240px" src="Untitled%2027.png"/></a></figure><p id="90ab9ba9-9e1c-4de9-9d23-db6c10d7719c" class=""><strong>武藏迴轉壽司</strong>，京都便宜平價美食就推它了，人氣爆棚超熱門。每盤壽司大多是146日圓，鮭魚、鮮蝦、貝類等應有盡有。新鮮度口味都是一流，想吃什麼隨便點，物美價廉感覺真好～</p><ul id="c61fae0a-7ccc-430b-ae3f-dcd1edb18851" class="bulleted-list"><li style="list-style-type:disc">地址：京都市中京區恵比須町440，<a href="https://www.google.com/maps/place/%E8%BF%B4%E8%BD%89%E5%A3%BD%E5%8F%B8+%E3%82%80%E3%81%95%E3%81%97/@35.0089539,135.7662481,17z/data=!3m1!4b1!4m5!3m4!1s0x6001089300bcb213:0xb7a56d575ebdf516!8m2!3d35.0089495!4d135.768823"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="c5c71208-bf3d-43b5-92b8-47b610f3ebde" class="bulleted-list"><li style="list-style-type:disc">營業時間：11:00–21:45 (周一至周日)</li></ul><p id="7874a519-e0a2-460b-9d28-289be65af568" class="">
+</p><p id="a22a8956-c468-4224-a80a-309ffaeb892c" class=""><span style="border-bottom:0.05em solid"><strong><strong>志津屋麵包(早餐)</strong></strong></span></p><figure id="2b87bf48-1a56-4ce7-a98b-dfe9faad7ca3" class="image"><a href="Untitled%2028.png"><img style="width:288px" src="Untitled%2028.png"/></a></figure><p id="fa67d2df-4510-4506-893d-74307c874573" class="">超人氣<strong>京都早餐</strong>再一發，<strong>志津屋</strong>，74年老字號麵包店，擁有超高知名度。推薦必點「炸牛肉三明治」、「洋蔥火腿三明治」，招牌代表作絕對要嚐嚐。柔嫩厚實牛排，搭配店家酸香醬汁好涮嘴，比預期美味太多了～✅圖文：<a href="https://bobby.tw/blog/post/218743723">志津屋SIZUYA－連鎖知名麵包店，分店多隨時可以一飽口福</a></p><p id="d722511a-f1e2-4848-929e-af0e7f129ff3" class=""><strong>志津屋 京都車站</strong></p><ul id="1b5b278e-ce19-427c-8bac-7457d64aedc8" class="bulleted-list"><li style="list-style-type:disc">地址：京都市下京區東塩小路高倉町8-3 京都駅八条口 アスティロード内，<a href="https://www.google.com/maps/place/%E5%BF%97%E6%B4%A5%E5%B1%8B+%E4%BA%AC%E9%83%BD%E7%AB%99%E5%BA%97/@34.984535,135.75862,15z/data=!4m2!3m1!1s0x0:0xce7f8952cd3d7086?sa=X&amp;ved=2ahUKEwjC3OmI8fr6AhWUmlYBHZP-Do4Q_BJ6BAhZEAU"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="a75e0207-f79b-47d6-b49d-b5fc18576e8f" class="bulleted-list"><li style="list-style-type:disc">營業時間：07:00–22:00 (周一至周日)</li></ul><p id="7ddb8e0e-314d-4736-9619-41662ff5f361" class="">
+</p><p id="d8d78873-15d6-427b-b555-779345575bb2" class=""><span style="border-bottom:0.05em solid"><strong>藤菜美醬油丸子 </strong></span><strong>三年坂本店</strong></p><figure id="4e32803a-fac2-4e26-91e1-685edb10101d" class="image"><a href="Untitled%2029.png"><img style="width:288px" src="Untitled%2029.png"/></a></figure><p id="072374a6-6288-4a66-99b3-1011daf27878" class=""><strong>藤菜美醬油丸子</strong>，超人氣京都小吃美食之一。剛烤好不久的藤菜美醬油糰子溫溫熱熱的，沾黃豆粉一起享用超好吃。微甘微甜冰熱抹茶，簡直完美，早知道必買蕨餅也順手帶一份了！✅圖文：<a href="https://bobby.tw/blog/post/220666403">藤菜美醬油丸子－清水寺三年坂美食，鹹甜糰子＆洛水冰涼推薦</a></p><ul id="ae6a03b8-2d13-4135-9ef5-74edbb4057dd" class="bulleted-list"><li style="list-style-type:disc">地址：京都市東山區清水3-338-39，<a href="https://www.google.com/maps/place/%E8%97%A4%E8%8F%9C%E7%BE%8E+%E4%B8%89%E5%B9%B4%E5%9D%82%E6%9C%AC%E5%BA%97/@34.9974552,135.7810255,15z/data=!4m5!3m4!1s0x0:0xa367eabddbc00db4!8m2!3d34.9974552!4d135.7810255"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="ee16f00a-674d-4f6b-9fc1-8233208780e1" class="bulleted-list"><li style="list-style-type:disc">營業時間：10:00–17:30 (周一至周五)、10:00–18:00 (周六日)</li></ul><p id="36bdf725-1d55-4b49-a6d5-7214043da10c" class="">
+</p><p id="33a0e2af-2cf7-4b66-900f-77b4e5a5eeb7" class=""><span style="border-bottom:0.05em solid"><strong><strong>中村藤吉抹茶 </strong></strong></span><strong>京都車站</strong></p><figure id="8dc7dc72-7fa4-4e1b-a6dc-f5e33f2879f7" class="image"><a href="Untitled%2030.png"><img style="width:288px" src="Untitled%2030.png"/></a></figure><p id="2e56849d-0dfa-44f3-8ced-6cf82aa28535" class="">宇治以抹茶聞名全球，京都傳統代表性美食，當然少不了這一味。超夯<strong>中村藤吉</strong>，超過160年歷史，台灣沒有分店，比伊藤久右衛門更加無可取代。推薦必點「抹茶聖代」，濃郁滋味超讚，好吃到差點流淚啊。✅圖文：<a href="https://bobby.tw/blog/post/228608624">中村藤吉－抹茶聖代配料爆滿！抹茶冰淇淋、抹茶蛋糕、白玉紅豆泥等大滿足</a></p><ul id="704b75f7-1b6f-47d7-9ca1-dc171b2a5914" class="bulleted-list"><li style="list-style-type:disc">地址：京都市下京區烏丸通鹽小路下ル東鹽小路町，<a href="https://www.google.com/maps/place/HARBS+LUMINE+EST%E6%96%B0%E5%AE%BF%E5%BA%97/@35.6912548,139.6989532,17z/data=!3m1!4b1!4m5!3m4!1s0x60188d5033c973d7:0x71c869250b4dcfd2!8m2!3d35.6912505!4d139.7011419"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="051cd48f-417f-4061-a9ef-121bea55f258" class="bulleted-list"><li style="list-style-type:disc">營業時間：11:00–21:00 (周一至周日)</li></ul><p id="f4ec2deb-02da-4324-a6a9-237a6b6f311d" class="">
+</p><p id="6b5bc549-6f55-46a2-bc28-3bcb224046bd" class=""><strong><span style="border-bottom:0.05em solid">京的燒肉處 弘</span></strong></p><figure id="3398bc2d-35c8-4224-902f-ee71510d0809" class="image"><a href="Untitled%2031.png"><img style="width:336px" src="Untitled%2031.png"/></a></figure><p id="dc545fb1-5c3b-4f48-b309-7966eb443c93" class="">京都名氣響亮燒肉連鎖店，<strong>京的燒肉處弘</strong>，喜歡和牛燒肉必去。牛舌、牛里肌、石鍋拌飯、飲料通通有，部位眾多建議直接點套餐一次滿足。價格中高，但滋味相當好，CP值很可以，人潮多想吃預約最保險。✅圖文：<a href="https://bobby.tw/blog/post/232547287">燒肉弘－超人氣連鎖和牛燒肉店，平價美食大推薦 (含預約＆菜單)</a></p><p id="793f3b33-2017-4b31-b4b1-5ae0126df2fa" class=""><strong>京的燒肉處 弘 千本三條本店</strong></p><ul id="cde56d85-7966-4a31-aec6-bef874015f17" class="bulleted-list"><li style="list-style-type:disc">地址：京都市中京區壬生朱雀町2-6，<a href="https://www.google.com/maps/place/%E4%BA%AC%E7%9A%84%E7%87%92%E8%82%89%E8%99%95+%E5%BC%98+%E5%8D%83%E6%9C%AC%E4%B8%89%E6%A2%9D%E6%9C%AC%E5%BA%97/@35.0084557,135.7433816,15z/data=!4m5!3m4!1s0x0:0xfe88e4713cbb8986!8m2!3d35.0084458!4d135.7433816"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="28d2545a-27e0-4cc5-98c6-753133b6db9b" class="bulleted-list"><li style="list-style-type:disc">營業時間：17:00–23:00 (周一至周日)</li></ul><p id="b9ad05bb-454f-4357-8abf-88b45485ddc9" class="">
+</p><p id="1dfe2cad-1dcc-4cae-8ebc-7c202ad4b606" class=""><span style="border-bottom:0.05em solid"><strong><strong>三嶋亭壽喜燒</strong></strong></span></p><figure id="b5a29554-3c2c-4263-9b70-c4040811b119" class="image"><a href="Untitled%2032.png"><img style="width:288px" src="Untitled%2032.png"/></a></figure><p id="c0245ecf-b423-4033-9091-a2b9fd7a00d3" class=""><strong>三嶋亭壽喜燒</strong>，令人為之瘋狂的和牛壽喜燒，鼎鼎大名不負眾望。牛肉油花密密麻麻，香甜柔嫩到爆炸，好吃會睜大眼睛不可置信的那種～要價不斐走高檔奢華路線，午餐相對便宜是首選，波比無敵大激推！✅圖文：<a href="https://bobby.tw/blog/post/232458985">三嶋亭壽喜燒－極品和牛大驚豔！午餐菜單較便宜，預約最保險</a></p><ul id="bf78f52e-b1b6-4f47-a979-e4062f7aba94" class="bulleted-list"><li style="list-style-type:disc">地址：京都市中京區櫻之町405，<a href="https://www.google.com/maps/place/%E4%B8%89%E5%B6%8B%E4%BA%AD+%E5%A3%BD%E5%96%9C%E7%87%92/@35.0085455,135.7621797,17z/data=!3m1!4b1!4m5!3m4!1s0x60010893bebb4cad:0x4ab0acc694762572!8m2!3d35.0085412!4d135.7670506"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="d0d8bd5e-d64b-454b-a920-0cca9247196c" class="bulleted-list"><li style="list-style-type:disc">營業時間：11:00–21:00 (周三公休)</li></ul><p id="689b2147-749d-405e-879d-df78d8f9f2be" class="">
+</p><p id="70fd800b-9369-43fe-96d7-c39d309d76ac" class=""><span style="border-bottom:0.05em solid"><strong><strong>本家第一旭拉麵（醬油）</strong></strong></span></p><figure id="2e0923cd-874a-4856-80d5-985020ca9d3b" class="image"><a href="Untitled%2033.png"><img style="width:240px" src="Untitled%2033.png"/></a></figure><p id="2244a4e4-e09d-420c-824e-d8addf7e6344" class=""><strong>本家第一旭拉麵</strong>，知名京都車站旁美食，營業到凌晨，又有深夜食堂美譽。最推薦「特製拉麵」，湯頭為醬油豚骨湯底，叉燒鋪得滿滿滿，麵幾乎都看不太到了。食べログ超高評分果真不錯吃，但波比足足排了50分鐘，想吃得有心理準備阿～✅圖文：<a href="https://bobby.tw/blog/post/228591731">本家第一旭拉麵－超人氣在地拉麵店，便宜狂排隊客滿是常態</a></p><ul id="2180280a-c92e-4cfd-b255-a8b59dbc31ea" class="bulleted-list"><li style="list-style-type:disc">地址：京都市下京區東塩小路向畑町845，<a href="https://www.google.com/maps/place/%E6%9C%AC%E5%AE%B6+%E7%AC%AC%E4%B8%80%E6%97%AD/@34.9866744,135.7625021,15z/data=!4m5!3m4!1s0x0:0xa5ed2c875338968b!8m2!3d34.9866961!4d135.7625256"><span style="border-bottom:0.05em solid">地圖</span></a></li></ul><ul id="756527d9-b8ea-464b-bca6-992bfe60f188" class="bulleted-list"><li style="list-style-type:disc">營業時間：06:00–01:00 (周四公休)</li></ul><p id="565e422f-a0b0-44ab-a6e6-bae14e4b356b" class="">
+</p><p id="22dc7bcc-0910-4288-b3e9-fdddde4fdb9e" class=""><strong><strong>燒肉TORAJI</strong></strong></p><figure id="4655c3cb-78a8-4cc1-981f-e7039f0ef005" class="image"><a href="Untitled%2034.png"><img style="width:240px" src="Untitled%2034.png"/></a></figure><p id="6b65b8a2-d8ad-4373-830f-5af1ed8457ff" class="">日本〒600-8216 Kyoto, Shimogyo Ward, Higashishiokojicho, 590-2 京都ヨドバシビル ６Ｆ</p><p id="bc9638b8-17c0-48d4-a9d2-3f1678e853bf" class="">〒600-8216 京都府京都市下京区東塩小路町590-2 京都ヨドバシビル ６Ｆ</p><p id="14580689-8351-4ff7-a37f-2075748f1c52" class="">星期一至日 11:00-23:00</p><p id="5c8cee80-aa49-4bcd-86e9-40490cb1b5c3" class="">
+</p></div></p></div></article></body></html>
